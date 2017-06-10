@@ -25,10 +25,10 @@
                                 <rect key="frame" x="112.5" y="95" width="95" height="30"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="s1e-Uu-4xO">
-                                <rect key="frame" x="58" y="155" width="204" height="31"/>
+                                <rect key="frame" x="58" y="177" width="204" height="31"/>
                                 <color key="tintColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="hG1-oK-lFB"/>
@@ -39,12 +39,6 @@
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGB-fB-2fn">
                                 <rect key="frame" x="141.5" y="301" width="37.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-2U-YvC">
-                                <rect key="frame" x="148" y="193" width="24.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -62,6 +56,12 @@
                                     <action selector="calculateTipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ch2-nh-SN6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-2U-YvC">
+                                <rect key="frame" x="148" y="148" width="24.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -72,9 +72,9 @@
                             <constraint firstItem="Wbh-2U-YvC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPQ-Pc-7FR"/>
                             <constraint firstItem="MGB-fB-2fn" firstAttribute="top" secondItem="xHq-P9-ytE" secondAttribute="bottom" constant="40" id="XKt-aS-wsH"/>
                             <constraint firstItem="xHq-P9-ytE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zdh-hj-1gB"/>
-                            <constraint firstItem="xHq-P9-ytE" firstAttribute="top" secondItem="Wbh-2U-YvC" secondAttribute="bottom" constant="17" id="pEf-T7-jZA"/>
-                            <constraint firstItem="s1e-Uu-4xO" firstAttribute="top" secondItem="npt-vN-Hgd" secondAttribute="bottom" constant="30" id="pPU-if-M95"/>
-                            <constraint firstItem="Wbh-2U-YvC" firstAttribute="top" secondItem="s1e-Uu-4xO" secondAttribute="bottom" constant="8" id="pzC-7u-VVL"/>
+                            <constraint firstItem="xHq-P9-ytE" firstAttribute="top" secondItem="Wbh-2U-YvC" secondAttribute="bottom" constant="62" id="pEf-T7-jZA"/>
+                            <constraint firstItem="s1e-Uu-4xO" firstAttribute="top" secondItem="npt-vN-Hgd" secondAttribute="bottom" constant="52" id="pPU-if-M95"/>
+                            <constraint firstItem="Wbh-2U-YvC" firstAttribute="top" secondItem="s1e-Uu-4xO" secondAttribute="bottom" constant="-59" id="pzC-7u-VVL"/>
                         </constraints>
                     </view>
                     <connections>
